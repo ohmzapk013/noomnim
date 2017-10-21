@@ -22,9 +22,9 @@ $url = 'https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey
 $json = file_get_contents('https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
-if (strpos($message, 'สอนหนูพูดหน่อยค่ะ') !== false) {
-  if (strpos($message, 'สอนหนูพูดหน่อยค่ะ') !== false) {
-    $x_tra = str_replace("สอนหนูพูดหน่อยค่ะ","", $message);
+if (strpos($message, 'สอนนุ่มนิ่ม') !== false) {
+  if (strpos($message, 'สอนนุ่มนิ่ม') !== false) {
+    $x_tra = str_replace("สอนนุ่มนิ่ม","", $message);
     $pieces = explode("|", $x_tra);
     $_question=str_replace("[","",$pieces[0]);
     $_answer=str_replace("]","",$pieces[1]);

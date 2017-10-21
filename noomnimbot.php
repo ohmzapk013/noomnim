@@ -1,6 +1,6 @@
 <?php
-$access_token = "EAAB7lpYdJRUBAK0GpHEr3Vdr4e0WjZAVZCgGuMgr7gf93BoGES4VAfpw0TyWFGdEUjg0xraIRZCcwOI73v4hHBF1Oupw6NgHBE2o6mQ3bQZANqQSnvZClVoW3Nxwq7KZB9V2oWqUa3TXkBOqfrRGeEs3saw6XCXydhRy3wUT8J1QZDZD";
-$verify_token = "nong_noomnim";
+$access_token = "EAAB7lpYdJRUBAIUZBkjcqhBYuxWdPiZBjgfytWyNFGxkNruQqXEabQMlAOba4veZBycBk05kG8m3N43aOPQVZCdQcmBWAFzHP6o4EB0QDXV23RP7siizKgzO68sU9ILmlWn7iXqq75tyzwf3iVFD7rHOzSwOK2FKSwHsWiEzTwZDZD";
+$verify_token = "nongnoomnim";
 $hub_verify_token = null;
 if(isset($_REQUEST['hub_challenge'])) {
  $challenge = $_REQUEST['hub_challenge'];
@@ -18,8 +18,8 @@ $message_to_reply = '';
  */
 
 $api_key="<mLAP API KEY>";
-$url = 'https://api.mlab.com/api/1/databases/nongnoomnim/collections/noomnimbot?apiKey='.$api_key.'';
-$json = file_get_contents('https://api.mlab.com/api/1/databases/nongnoomnim/collections/noomnimbot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
+$url = 'https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'';
+$json = file_get_contents('https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
 if (strpos($message, 'สอนหนูพูดหน่อยค่ะ') !== false) {

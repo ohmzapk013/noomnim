@@ -18,8 +18,8 @@ $message_to_reply = '';
  */
 
 $api_key="<mLAP API KEY>";
-$url = 'https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'';
-$json = file_get_contents('https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
+$url = 'https://api.mlab.com/api/1/databases/nongnoomnim/collections/noomnimbot?apiKey='.$api_key.'';
+$json = file_get_contents('https://api.mlab.com/api/1/databases/nongnoomnim/collections/noomnimbot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
 if (strpos($message, 'สอนหนูพูดหน่อยค่ะ') !== false) {
